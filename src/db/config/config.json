@@ -1,0 +1,24 @@
+{
+  "development": {
+    "username": "root",
+    "password": null,
+    "database": "bend",
+    "host": "127.0.0.1",
+    "dialect": "sqlite",
+    "storage": "dev.sqlite"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "142065C1@2u3s#$",
+    "database": "backend",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}

@@ -1,0 +1,24 @@
+<%- contentFor('body') %>
+
+<h1 class="mb-4">
+    <small>Posts Recentes</small>
+</h1>
+
+<% posts.forEach(function (post) {%>
+
+<div class="card shadow p-3 mb-2 bg-white rounded">
+    <!--removendo o style ="width: 18rem;" para deixar o card com o tamanho padrão -->
+    <img class="card-img-top" src="<%=post.foto%>" alt="Imagem de capa do card">
+    <div class="card-body">
+        <h5 class="card-title"><%=post.titulo%></h5>
+        <p class="card-text"> 
+            <%=post.texto.substr(0,200)%>...
+        </p>
+        <a href="/post/<%=post.id%>" class="btn btn-primary">Visitar</a>
+    </div>
+</div>
+<div class="card-footer bg-secondary mb-4 text-dark shadow p-3 mb-5 bg-white rounded">
+    Postado por <a href="#"><%=post.Usuario.email%></a> em <%=post.postadoEm%>
+</div>
+
+<% }) %>
